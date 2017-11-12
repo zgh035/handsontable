@@ -1,0 +1,44 @@
+
+
+
+
+
+mergeCells  合并表格，如果为boolean表示右键开启合并功能，
+            如果为数组表示默认合并的单元格
+
+minSpareCols 最少的空白列
+minSpareCols 最少的空白行
+multiSelect 是否可以选中多个单元格,默认为false
+outsideClickDeselects 点击表格外部，选中的单元格是否取消
+persistentState  对每一列排序的结果进行保存，保存到localstorage
+placeholder 空白表格显示的文本
+placeholderCellClassName 空表格的类名
+readOnly 单元格只读，不可修改
+readOnlyCellClassName 只读单元格的类名
+rowHeaders 如果为boolean表示是否使用行表头
+            如果为数组，则可以自定义表头的每一行的表头
+            还可以是函数，返回对应的表头
+rowHeaderWidth 行表头的宽度，
+rowHeights 每行的高度，可以是数字、字符串（会转变为数字）、
+          数组（对应每行的高度），函数（返回每行的高度）
+skipColumnOnPaste 粘贴的数据到当前选中行的下一个（右边）
+            测试时候会卡死不知道原因，最好不要使用
+sortFunction 自定义排序方式，返回一个函数（闭包），
+            该函数返回true表示正序排列，如果为false表示倒叙排列
+sortIndicator 是否显示当前排序的小箭头
+source 为type为autocomplet或dropDown的源数据，可以使用ajax请求数据
+stretchH 当表格宽度设定后，如果超出父元素的宽度，设定拉伸的位置
+tableClassName 所有table的类名
+trimDropdown 设置下拉框是否和单元格宽度一样宽
+trimWhitespace 是否对单元格中的数据开始和结尾的空格进行过滤
+undo 返回上一步是否可用，如果为false，右键菜单中还是有这个选项
+    但是点击后没有什么作用
+columns 中，type表示默认是展示是什么类型的数据（下拉，文本。。。），
+        editor表示编辑的时候是什么类型的数据，可以在默认是显示
+        文本，但是编辑的时候显示下拉框
+validator 表示校验的规则，可以为函数，也可以为正则表达式，
+         还可以是字符串
+visibleRows 下拉框可以最大显示的行数
+    
+/***********************   需要重新看的api   **********************/
+renderer
